@@ -7,6 +7,7 @@
 body {
   font-family: "Inter", sans-serif;
   background-color: #02182b;
+  color: #edf7f6;
 }
 
 /* Styles for the header section */
@@ -16,7 +17,6 @@ header {
   justify-content: space-between;
   align-items: center;
   padding-inline: 20px;
-  /* background-color: beige; */
 }
 
 #logo span {
@@ -110,4 +110,33 @@ header button .nav-svg {
 }
 header button:hover .nav-svg {
   fill: #b5f8fe;
+}
+
+/* MAIN STYLES START */
+main {
+  padding-inline: 1em;
+}
+
+/* Hero section start */
+.hero {
+  padding-block: 3em;
+}
+main h1 {
+  font-size: 2rem;
+}
+main h3 {
+  margin-block: 1em;
+  font-weight: 500;
+}
+/* Hero social icons */
+.hero-icons {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  padding-block: 2em;
+}
+.hero-icons svg {
+  height: 24px;
+  width: 22px;
+  fill: #edf7f6;
 }
