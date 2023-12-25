@@ -55,8 +55,8 @@ header {
 /* Styles for the X close icon */
 .header-nav #close-menu {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 17px;
+  right: 17px;
 }
 
 /* Styles for the navigation list */
