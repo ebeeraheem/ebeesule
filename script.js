@@ -3,13 +3,14 @@ const showMenu = document.querySelector("#open-menu");
 const hideMenu = document.querySelector("#close-menu");
 
 const menu = document.querySelector(".header-nav");
-// const menuItems = document.querySelectorAll(".header-nav > *");
 
 function openMenu() {
-  menu.style.display = "flex";
+  menu.classList.add("open");
 }
 function closeMenu(event) {
-  menu.style.display = "none";
+  if (event.target.closest("#close-menu")) {
+    menu.classList.remove("open");
+  }
 }
 
 showMenu.addEventListener("click", openMenu);

@@ -28,15 +28,17 @@ header {
 
 /* Mobile navigation styles */
 .header-nav {
-  display: none;
+  opacity: 0;
+  display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
   width: 100%;
   height: 80%;
+  position: absolute;
+  top: -80%;
+  left: 0;
+  right: 0;
+  transition: 0.5s ease-out;
 
   /* Background from https://css.glass */
   background: rgba(49, 57, 60, 0.2);
@@ -46,7 +48,10 @@ header {
   -webkit-backdrop-filter: blur(12.7px);
   border: 1px solid rgba(49, 57, 60, 0.64);
 }
-
+.header-nav.open {
+  opacity: 1;
+  top: 0; /* Slide down to the top when open */
+}
 /* Styles for the X close icon */
 .header-nav #close-menu {
   position: absolute;
