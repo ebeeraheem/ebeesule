@@ -1,3 +1,7 @@
+:root {
+  scroll-behavior: smooth;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -8,6 +12,31 @@ body {
   font-family: "Inter", sans-serif;
   background-color: #02182b;
   color: #edf7f6;
+  max-width: 900px;
+  margin-inline: auto;
+}
+
+p {
+  line-height: 1.7;
+}
+
+/* Links styled as buttons */
+.link-button {
+  display: inline-block;
+  /* font: inherit; */
+  color: #02182b;
+  background-color: #edf7f6;
+  border: 1px solid #b5f8fe50;
+  border-radius: 5px;
+  margin-top: 1em;
+  padding: 0.5em 1.5em;
+  width: 250px;
+  text-decoration: none;
+}
+.link-button:hover {
+  color: #b5f8fe;
+  background-color: #edf7f615;
+  /* cursor: pointer; */
 }
 
 /* Styles for the header section */
@@ -19,11 +48,11 @@ header {
   padding-inline: 20px;
 }
 
-#logo span {
+#logo a {
   font-size: 1.3rem;
   font-weight: 700;
-  cursor: pointer;
   color: #edf7f6;
+  text-decoration: none;
 }
 
 /* Mobile navigation styles */
@@ -140,3 +169,71 @@ main h3 {
   width: 22px;
   fill: #edf7f6;
 }
+
+/* About section start */
+.about h2 {
+  font-size: 1rem;
+  margin-block: 1em;
+}
+.about > p:nth-child(3) {
+  margin-top: 1em;
+}
+.about > p:nth-child(3) span {
+  font-style: italic;
+  font-size: 90%;
+}
+.about p a {
+  color: inherit;
+}
+.about p a:hover {
+  text-decoration: none;
+}
+
+/* Projects section start */
+.projects {
+  margin-top: 3em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+.projects div {
+  padding: 1em;
+  border: 1px solid #b5f8fe50;
+  border-radius: 5px;
+  background-color: #edf7f615;
+}
+.projects h2 {
+  font-size: 1rem;
+  margin-block: 1em;
+  grid-column: 1 / -1;
+}
+.projects h3 a {
+  color: #b5f8fe;
+  text-decoration: none;
+}
+.projects h3 a:hover {
+  text-decoration: underline;
+}
+.projects h3 {
+  font-weight: 500;
+  margin-top: 0;
+}
+.projects svg {
+  display: inline-block;
+  fill: #edf7f6;
+  width: 14px;
+  height: 14px;
+  transition: 0.2s ease;
+}
+.projects a:hover svg {
+  transform: translate(3px, -3px);
+  fill: #b5f8fe;
+}
+.projects img {
+  display: inline-block;
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 1em;
+}
+
+/* Styles for project one */
