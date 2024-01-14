@@ -39,3 +39,57 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 // Projects card slide-up animation end
+
+// Form validation start
+const contactForm = document.querySelector(".contact-form");
+const formName = document.querySelector("#name");
+const formEmail = document.querySelector("#email");
+const formPhone = document.querySelector("#phone");
+const formMessage = document.querySelector("#message");
+const formBtn = document.querySelector("#form-button");
+
+contactForm.addEventListener("submit", function (input) {
+  let isValid = true;
+
+  // Name validation
+  if (formName.value.trim() === "") {
+    formName.style.border = "1px solid red";
+    isValid = false;
+  } else {
+    formName.style.border = "1px solid green";
+  }
+
+  // Email validation
+  const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+  if (formEmail.value.trim() === "" || !emailPattern.test(formEmail.value)) {
+    formEmail.style.border = "1px solid red";
+    isValid = false;
+  } else {
+    formEmail.style.border = "1px solid green";
+  }
+
+  // Phone number validation
+  if (!Number(formPhone.value.trim())) {
+    formPhone.style.border = "1px solid red";
+    isValid = false;
+  } else {
+    formPhone.style.border = "1px solid green";
+  }
+
+  // Message validation
+  if (formMessage.value.trim() === "") {
+    formMessage.style.border = "1px solid red";
+    isValid = false;
+  } else {
+    formMessage.style.border = "1px solid green";
+  }
+
+  // Prevent form submission if an error is encountered
+  if (!isValid) {
+    input.preventDefault();
+  } else {
+    // Reset the form if it's successfully submitted
+    contactForm.reset();
+  }
+});
+// Form validation end

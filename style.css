@@ -21,7 +21,8 @@ p {
 }
 
 /* Links styled as buttons */
-.link-button {
+.link-button,
+.contact-form button {
   display: inline-block;
   color: #02182b;
   background-color: #edf7f6;
@@ -29,12 +30,13 @@ p {
   border-radius: 5px;
   margin-top: 1em;
   padding: 0.5em 1.5em;
-  width: 250px;
+  max-width: 250px;
   text-decoration: none;
 
   transition: 0.3s ease;
 }
-.link-button:hover {
+.link-button:hover,
+.contact-form button:hover {
   color: #b5f8fe;
   background-color: #edf7f615;
   border: 1px solid #b5f8fe50;
@@ -258,6 +260,43 @@ main h3 {
 /* Styles for project card*/
 .project {
   opacity: 0;
-  transform: translateY(20px);
+  transform: translateY(50px);
   transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Styles for the contact form */
+.contact {
+  margin-top: 3em;
+}
+.contact h2 {
+  font-size: 1rem;
+  margin-block: 1em;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.contact-form input,
+.contact-form textarea {
+  font: inherit;
+  padding: 0.5em;
+  color: #edf7f6;
+  background-color: transparent;
+  border-radius: 3px;
+  border: 1px solid #b5f8fe50;
+}
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #b5f8fe;
+  font-size: 0.9rem;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: 0;
+  border-color: #b5f8fe;
+}
+.contact-form button {
+  font: inherit;
+  outline: 0;
 }
