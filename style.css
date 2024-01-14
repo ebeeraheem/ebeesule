@@ -23,19 +23,21 @@ p {
 /* Links styled as buttons */
 .link-button {
   display: inline-block;
-  /* font: inherit; */
   color: #02182b;
   background-color: #edf7f6;
-  border: 1px solid #b5f8fe50;
+  border: 1px solid #edf7f6;
   border-radius: 5px;
   margin-top: 1em;
   padding: 0.5em 1.5em;
   width: 250px;
   text-decoration: none;
+
+  transition: 0.3s ease;
 }
 .link-button:hover {
   color: #b5f8fe;
   background-color: #edf7f615;
+  border: 1px solid #b5f8fe50;
   /* cursor: pointer; */
 }
 
@@ -239,5 +241,23 @@ main h3 {
   border-radius: 5px;
   margin-top: 1em;
 }
-
-/* Styles for project one */
+.projects .tech-stack {
+  list-style: outside none;
+  font-size: 0.8rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4em;
+  margin-top: 1em;
+}
+.projects .tech-stack li {
+  color: #b5f8fe;
+  border: 1px solid #b5f8fe50;
+  border-radius: 3px;
+  padding: 0.1em 0.3em;
+}
+/* Styles for project card*/
+.project {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
