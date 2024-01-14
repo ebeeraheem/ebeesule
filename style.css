@@ -170,6 +170,10 @@ main h3 {
   fill: #edf7f6;
 }
 
+.hero-icons a:hover svg {
+  fill: #b5f8fe;
+}
+
 /* About section start */
 .about h2 {
   font-size: 1rem;
