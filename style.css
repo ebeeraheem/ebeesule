@@ -289,7 +289,9 @@ main h3 {
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
   color: #b5f8fe;
+  opacity: 0.5;
   font-size: 0.9rem;
+  font-weight: 200;
 }
 .contact-form input:focus,
 .contact-form textarea:focus {
