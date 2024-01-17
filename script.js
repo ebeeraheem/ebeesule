@@ -48,7 +48,7 @@ const formPhone = document.querySelector("#phone");
 const formMessage = document.querySelector("#message");
 const formBtn = document.querySelector("#form-button");
 
-contactForm.addEventListener("submit", function (input) {
+contactForm.addEventListener("submit", function (event) {
   let isValid = true;
 
   // Name validation
@@ -86,9 +86,11 @@ contactForm.addEventListener("submit", function (input) {
 
   // Prevent form submission if an error is encountered
   if (!isValid) {
-    input.preventDefault();
-  } else {
-    // Reset the form if it's successfully submitted
+    event.preventDefault();
+  }
+
+  // Reset the form if it is successfully submitted
+  if (isValid) {
     contactForm.reset();
   }
 });
