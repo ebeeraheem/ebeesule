@@ -88,10 +88,5 @@ contactForm.addEventListener("submit", function (event) {
   if (!isValid) {
     event.preventDefault();
   }
-
-  // Reset the form if it is successfully submitted
-  if (isValid) {
-    contactForm.reset();
-  }
 });
 // Form validation end
