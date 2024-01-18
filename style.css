@@ -40,7 +40,7 @@ p {
   color: #b5f8fe;
   background-color: #edf7f615;
   border: 1px solid #b5f8fe50;
-  /* cursor: pointer; */
+  cursor: pointer;
 }
 
 /* Styles for the header section */
@@ -80,6 +80,12 @@ header {
   backdrop-filter: blur(12.7px);
   -webkit-backdrop-filter: blur(12.7px);
   border: 1px solid rgba(49, 57, 60, 0.64);
+}
+/* Hide menu icon on screens larger than 767px */
+@media (min-width: 768px) {
+  #open-menu {
+    display: none;
+  }
 }
 .header-nav.open {
   opacity: 1;
@@ -157,9 +163,10 @@ main {
 main h1 {
   font-size: 2rem;
 }
-main h3 {
+.hero h2 {
   margin-block: 1em;
-  font-weight: 500;
+  font-weight: 600;
+  font-size: 1.2rem;
 }
 /* Hero social icons */
 .hero-icons {
@@ -182,6 +189,7 @@ main h3 {
 .about h2 {
   font-size: 1rem;
   margin-block: 1em;
+  font-size: 1.3rem;
 }
 .about > p:nth-child(3) {
   margin-top: 1em;
@@ -211,7 +219,7 @@ main h3 {
   background-color: #edf7f615;
 }
 .projects h2 {
-  font-size: 1rem;
+  font-size: 1.3rem;
   margin-block: 1em;
   grid-column: 1 / -1;
 }
@@ -269,13 +277,14 @@ main h3 {
   margin-top: 3em;
 }
 .contact h2 {
-  font-size: 1rem;
+  font-size: 1.3rem;
   margin-block: 1em;
 }
 .contact-form {
   display: flex;
   flex-direction: column;
   gap: 1em;
+  max-width: 600px;
 }
 .contact-form input,
 .contact-form textarea {
