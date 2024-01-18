@@ -247,6 +247,7 @@ main h1 {
 }
 .projects img {
   display: inline-block;
+  height: auto;
   width: 100%;
   border-radius: 5px;
   margin-top: 1em;
@@ -280,6 +281,9 @@ main h1 {
   font-size: 1.3rem;
   margin-block: 1em;
 }
+.contact h3 {
+  margin-block: 0.5em;
+}
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -306,6 +310,9 @@ main h1 {
 .contact-form textarea:focus {
   outline: 0;
   border-color: #b5f8fe;
+}
+.contact-form textarea {
+  resize: vertical;
 }
 .contact-form button {
   font: inherit;
