@@ -90,3 +90,7 @@ contactForm.addEventListener("submit", function (event) {
   }
 });
 // Form validation end
+
+// Automatic copyright year start
+document.querySelector(".year").textContent = new Date().getFullYear();
+// Automatic copyright year end

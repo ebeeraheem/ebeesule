@@ -318,3 +318,15 @@ main h1 {
   font: inherit;
   outline: 0;
 }
+
+/* Footer section start */
+.footer {
+  margin-top: 3em;
+  padding-block: 1em;
+  text-align: center;
+  color: #b5f8fe50;
+}
+.footer p {
+  line-height: 1;
+}
+/* Footer section end */
