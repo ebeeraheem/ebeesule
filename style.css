@@ -395,7 +395,15 @@ section {
 }
 
 .hero-stats {
+    display: grid;
     grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 1rem;
+    backdrop-filter: blur(10px);
 }
 
 .stat {
@@ -887,7 +895,7 @@ section {
     display: flex;
     align-items: center;
     gap: 1rem;
-    padding: 1.5rem;
+    padding: 1.5rem .5rem;
     background: var(--card-bg);
     border: 1px solid var(--border-color);
     border-radius: 0.75rem;
