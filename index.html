@@ -1,458 +1,850 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+        <title>
+            Ibrahim Suleiman | Backend Software Engineer | .NET Specialist
+        </title>
+        <meta
+            name="description"
+            content="Backend Software Engineer with expertise in C# .NET, building scalable SaaS platforms and enterprise systems. Proven track record with 99.9% uptime and serving 15,000+ users."
+        />
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="Ibrahim Suleiman" />
 
-    <title>Ibrahim Suleiman - Portfolio</title>
-    <meta
-      name="description"
-      content="Ibrahim Suleiman is a software engineer that crafts scalable, secure, and high-performance systems with C#, .NET, and clean architecture principles."
-    />
+        <!-- Social Media / Open Graph Tags -->
+        <meta
+            property="og:title"
+            content="Ibrahim Suleiman | Backend Software Engineer | .NET Specialist"
+        />
+        <meta
+            property="og:description"
+            content="Backend Software Engineer with expertise in C# .NET, building scalable SaaS platforms and enterprise systems. Proven track record with 99.9% uptime and serving 15,000+ users."
+        />
+        <meta property="og:image" content="" />
+        <meta property="og:url" content="https://ebeesule.netlify.app" />
+        <meta property="og:type" content="website" />
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap"
-      rel="stylesheet"
-    />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+            name="twitter:title"
+            content="Ibrahim Suleiman | Backend Software Engineer | .NET Specialist"
+        />
+        <meta
+            name="twitter:description"
+            content="Backend Software Engineer with expertise in C# .NET, building scalable SaaS platforms and enterprise systems. Proven track record with 99.9% uptime and serving 15,000+ users."
+        />
+        <meta name="twitter:image" content="" />
 
-    <!-- Font Awesome CDN -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
 
-    <!-- Open Graph tags -->
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="style.css" />
+    </head>
 
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <body>
+        <!-- Header section start -->
+        <header>
+            <div id="logo">
+                <a href="#home">Ibrahim Suleiman</a>
+            </div>
 
-    <link rel="stylesheet" href="style.css" />
-  </head>
+            <nav class="header-nav">
+                <button id="close-menu" aria-label="Close navigation menu">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                    >
+                        <path
+                            d="M18.3 5.71a.996.996 0 0 0-1.41 0L12 10.59 7.11 5.7A.996.996 0 1 0 5.7 7.11L10.59 12 5.7 16.89a.996.996 0 1 0 1.41 1.41L12 13.41l4.89 4.89a.996.996 0 0 0 1.41-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4z"
+                        />
+                    </svg>
+                </button>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
 
-  <body>
-    <!-- Header section start -->
-    <header>
-      <div id="logo">
-        <a href="index.html"
-          ><img
-            src="images/logo.png"
-            width="96"
-            height="20"
-            alt="Portfolio logo"
-        /></a>
-      </div>
-
-      <nav class="header-nav">
-        <button
-          id="close-menu"
-          aria-label="Toggle navigation menu"
-          aria-expanded="true"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            height="16"
-            width="16"
-            viewBox="0 0 384 512"
-          >
-            <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
-            <path
-              class="nav-svg"
-              opacity="1"
-              fill="#1E3050"
-              d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z"
-            />
-          </svg>
-        </button>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-
-      <button
-        id="open-menu"
-        aria-label="Toggle navigation menu"
-        aria-expanded="false"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          height="16"
-          width="16"
-          viewBox="0 0 448 512"
-        >
-          <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
-          <path
-            class="nav-svg"
-            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
-          />
-        </svg>
-      </button>
-    </header>
-    <!-- Header section end -->
-
-    <!-- Main section start -->
-    <main>
-      <!-- Hero section start -->
-      <section class="hero">
-        <h1>Ibrahim Suleiman</h1>
-        <h2>Software Engineer</h2>
-        <p>Building robust, scalable solutions with C# and .NET</p>
-        <!-- Hero Social Icons -->
-        <div class="hero-icons">
-          <!-- Github -->
-          <a
-            href="https://github.com/ebeeraheem/"
-            target="_blank"
-            aria-label="GitHub profile link"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="16"
-              width="14"
-              viewBox="0 0 496 512"
-            >
-              <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
-              <path
-                d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
-              />
-            </svg>
-          </a>
-
-          <!-- LinkedIn -->
-          <a
-            href="https://www.linkedin.com/in/ebeesule/"
-            target="_blank"
-            aria-label="LinkedIn profile link"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="16"
-              width="14"
-              viewBox="0 0 448 512"
-            >
-              <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
-              <path
-                d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
-              />
-            </svg>
-          </a>
-        </div>
-      </section>
-      <!-- Hero Section end -->
-
-      <!-- About section start -->
-      <section id="about" class="about">
-        <h2>ABOUT</h2>
-        <p>
-          My tech journey began in 2012 with Microsoft Encarta Kids, and it’s
-          been a love story with software ever since. From designing brand
-          identities in CorelDRAW to hand-coding interfaces as a frontend
-          developer, I’ve evolved into a backend engineer focused on building
-          real-world systems that solve real-world problems.
-        </p>
-
-        <p>
-          Today, I specialize in
-          <strong
-            >backend development with ASP.NET Core, .NET Web API, EF Core, and
-            SQL-based databases, delivering scalable, secure, and maintainable
-            solutions</strong
-          >
-          for web platforms and APIs.
-        </p>
-
-        <p>
-          I’m also a frontend developer with a
-          <strong>keen eye for design</strong>, ensuring that the user
-          experience is as seamless as the code behind it. Let’s build something
-          great—functional, fast, and future-ready.
-        </p>
-
-        <a
-          class="link-button"
-          href="assets/Ibrahim_Suleiman_Resume.pdf"
-          download="Ibrahim_Suleiman_Resume.pdf"
-          title="Grab a copy of my resume."
-          >Download my resume</a
-        >
-      </section>
-      <!-- About section end -->
-
-      <!-- Projects section start -->
-      <section id="projects" class="projects">
-        <h2>PROJECTS</h2>
-        <div class="project six">
-          <h3>
-            <a
-              href="https://ebeeraheem.github.io/Prismaria-Designs/"
-              target="_blank"
-              >Prismaria Designs - Architecture and design firm
-              <span
-                ><svg
-                  height="24"
-                  viewBox="0 0 24 24"
-                  width="24"
-                  xmlns="http://www.w3.org/2000/svg"
+            <button id="open-menu" aria-label="Open navigation menu">
+                <svg
+                    class="nav-svg"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
                 >
-                  <path
-                    d="m5 2h2c.55228475 0 1 .44771525 1 1 0 .51283584-.38604019.93550716-.88337887.99327227l-.11662113.00672773h-2c-.51283584 0-.93550716.38604019-.99327227.88337887l-.00672773.11662113v14c0 .5128358.38604019.9355072.88337887.9932723l.11662113.0067277h14c.5128358 0 .9355072-.3860402.9932723-.8833789l.0067277-.1166211v-2c0-.5522847.4477153-1 1-1 .5128358 0 .9355072.3860402.9932723.8833789l.0067277.1166211v2c0 1.5976809-1.24892 2.9036609-2.8237272 2.9949073l-.1762728.0050927h-14c-1.59768088 0-2.90366088-1.24892-2.99490731-2.8237272l-.00509269-.1762728v-14c0-1.59768088 1.24891996-2.90366088 2.82372721-2.99490731l.17627279-.00509269h2zm16 0 .081.003.1197258.01724007.1114167.02949802.111079.04393527.0974873.05232209.0960413.06679051.0903567.08010726.0965586.11180017.0716634.11124451.0310174.06096295.0337679.08144877.0240408.07565741.0289379.14789747.0069072.1180955v6c0 .55228475-.4477153 1-1 1s-1-.44771525-1-1v-3.586l-6.2928932 6.2931068c-.360484.3604839-.927715.3882135-1.3200062.0831886l-.0942074-.0831886c-.3604839-.360484-.3882135-.927715-.0831886-1.3200062l.0831886-.0942074 6.2911068-6.2928932h-3.584c-.5522847 0-1-.44771525-1-1s.4477153-1 1-1z"
-                    fill-rule="evenodd"
-                  /></svg></span
-            ></a>
-          </h3>
-          <p>
-            Prismaria Designs is an architecture and design firm with a global
-            reputation for creating innovative spaces.
-          </p>
-          <img
-            src="images/prismaria-designs.webp"
-            width="235"
-            height="109"
-            alt="Hero section of Prismaria-Designs."
-          />
-          <ul class="tech-stack">
-            <li>HTML</li>
-            <li>CSS</li>
-          </ul>
-        </div>
+                    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+                </svg>
+            </button>
+        </header>
+        <!-- Header section end -->
 
-        <div class="project five">
-          <h3>
-            <a href="https://revviews.com.ng/" target="_blank"
-              >Revviews - Car Reviews Website
-              <span
-                ><svg
-                  height="24"
-                  viewBox="0 0 24 24"
-                  width="24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="m5 2h2c.55228475 0 1 .44771525 1 1 0 .51283584-.38604019.93550716-.88337887.99327227l-.11662113.00672773h-2c-.51283584 0-.93550716.38604019-.99327227.88337887l-.00672773.11662113v14c0 .5128358.38604019.9355072.88337887.9932723l.11662113.0067277h14c.5128358 0 .9355072-.3860402.9932723-.8833789l.0067277-.1166211v-2c0-.5522847.4477153-1 1-1 .5128358 0 .9355072.3860402.9932723.8833789l.0067277.1166211v2c0 1.5976809-1.24892 2.9036609-2.8237272 2.9949073l-.1762728.0050927h-14c-1.59768088 0-2.90366088-1.24892-2.99490731-2.8237272l-.00509269-.1762728v-14c0-1.59768088 1.24891996-2.90366088 2.82372721-2.99490731l.17627279-.00509269h2zm16 0 .081.003.1197258.01724007.1114167.02949802.111079.04393527.0974873.05232209.0960413.06679051.0903567.08010726.0965586.11180017.0716634.11124451.0310174.06096295.0337679.08144877.0240408.07565741.0289379.14789747.0069072.1180955v6c0 .55228475-.4477153 1-1 1s-1-.44771525-1-1v-3.586l-6.2928932 6.2931068c-.360484.3604839-.927715.3882135-1.3200062.0831886l-.0942074-.0831886c-.3604839-.360484-.3882135-.927715-.0831886-1.3200062l.0831886-.0942074 6.2911068-6.2928932h-3.584c-.5522847 0-1-.44771525-1-1s.4477153-1 1-1z"
-                    fill-rule="evenodd"
-                  /></svg></span
-            ></a>
-          </h3>
-          <p>
-            Revviews is a car reviews website that delves into the world of both
-            modern and classic cars, offering valuable information for car
-            enthusiasts.
-          </p>
-          <img
-            src="images/revviews.webp"
-            width="235"
-            height="109"
-            alt="Hero section of Revviews website."
-          />
-          <ul class="tech-stack">
-            <li>WordPress</li>
-            <li>Custom Theme</li>
-            <li>PHP</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>SEO</li>
-          </ul>
-        </div>
+        <!-- Main section start -->
+        <main>
+            <!-- Hero section start -->
+            <section id="home" class="hero">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1>Ibrahim Suleiman</h1>
+                        <h2>Backend Software Engineer | .NET Specialist</h2>
+                        <p class="hero-description">
+                            Building scalable SaaS platforms and enterprise
+                            systems that serve thousands of users. Expertise in
+                            C# .NET with a proven track record of 99.9% uptime
+                            and measurable business impact.
+                        </p>
 
-        <div class="project four">
-          <h3>
-            <a href="https://acrossmart.com" target="_blank"
-              >AcrossMart - Ecommerce platform
-              <span
-                ><svg
-                  height="24"
-                  viewBox="0 0 24 24"
-                  width="24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="m5 2h2c.55228475 0 1 .44771525 1 1 0 .51283584-.38604019.93550716-.88337887.99327227l-.11662113.00672773h-2c-.51283584 0-.93550716.38604019-.99327227.88337887l-.00672773.11662113v14c0 .5128358.38604019.9355072.88337887.9932723l.11662113.0067277h14c.5128358 0 .9355072-.3860402.9932723-.8833789l.0067277-.1166211v-2c0-.5522847.4477153-1 1-1 .5128358 0 .9355072.3860402.9932723.8833789l.0067277.1166211v2c0 1.5976809-1.24892 2.9036609-2.8237272 2.9949073l-.1762728.0050927h-14c-1.59768088 0-2.90366088-1.24892-2.99490731-2.8237272l-.00509269-.1762728v-14c0-1.59768088 1.24891996-2.90366088 2.82372721-2.99490731l.17627279-.00509269h2zm16 0 .081.003.1197258.01724007.1114167.02949802.111079.04393527.0974873.05232209.0960413.06679051.0903567.08010726.0965586.11180017.0716634.11124451.0310174.06096295.0337679.08144877.0240408.07565741.0289379.14789747.0069072.1180955v6c0 .55228475-.4477153 1-1 1s-1-.44771525-1-1v-3.586l-6.2928932 6.2931068c-.360484.3604839-.927715.3882135-1.3200062.0831886l-.0942074-.0831886c-.3604839-.360484-.3882135-.927715-.0831886-1.3200062l.0831886-.0942074 6.2911068-6.2928932h-3.584c-.5522847 0-1-.44771525-1-1s.4477153-1 1-1z"
-                    fill-rule="evenodd"
-                  /></svg></span
-            ></a>
-          </h3>
-          <p>
-            An innovative cutting-edge online e-commerce platform designed to
-            revolutionize the way shopping is done in Nigeria.
-          </p>
-          <img
-            src="images/acrossmart.webp"
-            width="235"
-            height="109"
-            alt="Hero section of the AcrossMart platform."
-          />
-          <ul class="tech-stack">
-            <li>WordPress</li>
-            <li>WooCommerce</li>
-            <li>PHP</li>
-            <li>HTML/CSS</li>
-            <li>JavaScript</li>
-            <li>OAuth</li>
-            <li>Geolocation API</li>
-            <li>Rave API</li>
-          </ul>
-        </div>
+                        <div class="hero-stats">
+                            <div class="stat">
+                                <span class="stat-number">15,000+</span>
+                                <span class="stat-label">Users Served</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">99.9%</span>
+                                <span class="stat-label">Uptime</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">98%</span>
+                                <span class="stat-label">Accuracy</span>
+                            </div>
+                        </div>
 
-        <div class="project three">
-          <h3>
-            <a href="https://soft-pink.vercel.app/" target="_blank"
-              >Softy Pinko: Recreated
-              <span
-                ><svg
-                  height="24"
-                  viewBox="0 0 24 24"
-                  width="24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="m5 2h2c.55228475 0 1 .44771525 1 1 0 .51283584-.38604019.93550716-.88337887.99327227l-.11662113.00672773h-2c-.51283584 0-.93550716.38604019-.99327227.88337887l-.00672773.11662113v14c0 .5128358.38604019.9355072.88337887.9932723l.11662113.0067277h14c.5128358 0 .9355072-.3860402.9932723-.8833789l.0067277-.1166211v-2c0-.5522847.4477153-1 1-1 .5128358 0 .9355072.3860402.9932723.8833789l.0067277.1166211v2c0 1.5976809-1.24892 2.9036609-2.8237272 2.9949073l-.1762728.0050927h-14c-1.59768088 0-2.90366088-1.24892-2.99490731-2.8237272l-.00509269-.1762728v-14c0-1.59768088 1.24891996-2.90366088 2.82372721-2.99490731l.17627279-.00509269h2zm16 0 .081.003.1197258.01724007.1114167.02949802.111079.04393527.0974873.05232209.0960413.06679051.0903567.08010726.0965586.11180017.0716634.11124451.0310174.06096295.0337679.08144877.0240408.07565741.0289379.14789747.0069072.1180955v6c0 .55228475-.4477153 1-1 1s-1-.44771525-1-1v-3.586l-6.2928932 6.2931068c-.360484.3604839-.927715.3882135-1.3200062.0831886l-.0942074-.0831886c-.3604839-.360484-.3882135-.927715-.0831886-1.3200062l.0831886-.0942074 6.2911068-6.2928932h-3.584c-.5522847 0-1-.44771525-1-1s.4477153-1 1-1z"
-                    fill-rule="evenodd"
-                  /></svg></span
-            ></a>
-          </h3>
-          <p>
-            Softy Pinko was a passion project to enhance my grasp of responsive
-            design. It was meant to be simpler, but I added a few features
-            because I liked it.
-          </p>
-          <img
-            src="images/softy-pinko.webp"
-            width="235"
-            height="109"
-            alt="Hero section of the Softy Pinko project"
-          />
-          <ul class="tech-stack">
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>JavaScript</li>
-            <li>Responsive Design</li>
-          </ul>
-        </div>
+                        <div class="hero-actions">
+                            <a href="#contact" class="btn-primary"
+                                >Get In Touch</a
+                            >
+                            <a
+                                href="assets/Ibrahim_Suleiman_Resume.pdf"
+                                download
+                                class="btn-secondary"
+                                >Download Resume</a
+                            >
+                        </div>
+                    </div>
 
-        <div class="project two">
-          <h3>
-            <a href="https://ebeesule.netlify.app"
-              >Ibrahim Suleiman Portfolio (v1)</a
-            >
-          </h3>
-          <p>
-            This is the first version of my personal portfolio website. I prefer
-            creating distinct versions to track changes over time.
-          </p>
-          <img
-            src="images/ebeesule.webp"
-            width="235"
-            height="109"
-            alt="Hero section of my personal portfolio website"
-          />
-          <ul class="tech-stack">
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>JavaScript</li>
-            <li>ES6+</li>
-            <li>SEO</li>
-            <li>Responsive Design</li>
-          </ul>
-        </div>
+                    <div class="hero-image">
+                        <img
+                            src="https://placehold.co/400x500/02182b/edf7f6?text=Ibrahim+Suleiman"
+                            alt="Ibrahim Suleiman - Backend Software Engineer"
+                        />
+                    </div>
+                </div>
 
-        <div class="project one">
-          <h3>
-            <a href="https://ebeeraheem.github.io/dark-hero/" target="_blank"
-              >Dark Hero
-              <span
-                ><svg
-                  height="24"
-                  viewBox="0 0 24 24"
-                  width="24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="m5 2h2c.55228475 0 1 .44771525 1 1 0 .51283584-.38604019.93550716-.88337887.99327227l-.11662113.00672773h-2c-.51283584 0-.93550716.38604019-.99327227.88337887l-.00672773.11662113v14c0 .5128358.38604019.9355072.88337887.9932723l.11662113.0067277h14c.5128358 0 .9355072-.3860402.9932723-.8833789l.0067277-.1166211v-2c0-.5522847.4477153-1 1-1 .5128358 0 .9355072.3860402.9932723.8833789l.0067277.1166211v2c0 1.5976809-1.24892 2.9036609-2.8237272 2.9949073l-.1762728.0050927h-14c-1.59768088 0-2.90366088-1.24892-2.99490731-2.8237272l-.00509269-.1762728v-14c0-1.59768088 1.24891996-2.90366088 2.82372721-2.99490731l.17627279-.00509269h2zm16 0 .081.003.1197258.01724007.1114167.02949802.111079.04393527.0974873.05232209.0960413.06679051.0903567.08010726.0965586.11180017.0716634.11124451.0310174.06096295.0337679.08144877.0240408.07565741.0289379.14789747.0069072.1180955v6c0 .55228475-.4477153 1-1 1s-1-.44771525-1-1v-3.586l-6.2928932 6.2931068c-.360484.3604839-.927715.3882135-1.3200062.0831886l-.0942074-.0831886c-.3604839-.360484-.3882135-.927715-.0831886-1.3200062l.0831886-.0942074 6.2911068-6.2928932h-3.584c-.5522847 0-1-.44771525-1-1s.4477153-1 1-1z"
-                    fill-rule="evenodd"
-                  /></svg></span
-            ></a>
-          </h3>
-          <p>
-            Trying out new features is a great way to learn and master
-            technologies, especially on a personal project where nothing can go
-            wrong.
-          </p>
-          <img
-            src="images/dark-hero.webp"
-            width="235"
-            height="109"
-            alt="Hero section of the Dark Hero project"
-          />
-          <ul class="tech-stack">
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>JavaScript</li>
-            <li>ES6+</li>
-            <li>Responsive Design</li>
-          </ul>
-        </div>
-      </section>
-      <!-- Projects section end -->
+                <!-- Hero Social Icons -->
+                <div class="hero-social">
+                    <a
+                        href="https://github.com/ebeeraheem/"
+                        target="_blank"
+                        aria-label="GitHub profile"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 496 512"
+                        >
+                            <path
+                                d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                            />
+                        </svg>
+                    </a>
+                    <a
+                        href="https://www.linkedin.com/in/ebeesule/"
+                        target="_blank"
+                        aria-label="LinkedIn profile"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512"
+                        >
+                            <path
+                                d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+                            />
+                        </svg>
+                    </a>
+                    <a
+                        href="mailto:ebeeraheem@gmail.com"
+                        aria-label="Email contact"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"
+                        >
+                            <path
+                                d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"
+                            />
+                        </svg>
+                    </a>
+                </div>
+            </section>
+            <!-- Hero section end -->
 
-      <!-- Contact section start -->
-      <section id="contact" class="contact">
-        <h2>CONTACT</h2>
-        <h3>Have a project or opportunity you'd like to discuss?</h3>
+            <!-- About section start -->
+            <section id="about" class="about">
+                <div class="section-header">
+                    <h2>About Me</h2>
+                    <p class="section-subtitle">
+                        Backend Software Engineer with a passion for scalable
+                        solutions
+                    </p>
+                </div>
 
-        <form
-          action=""
-          class="contact-form"
-          aria-label="Contact Form"
-          name="Portfolio Form"
-          netlify
-        >
-          <input type="text" name="name" id="name" placeholder="Full name" />
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            I'm a Backend Software Engineer with expertise in
+                            designing and delivering scalable SaaS platforms and
+                            enterprise systems using C# and .NET. With a proven
+                            track record of building secure, high-performance
+                            APIs and applications that support thousands of
+                            users, I excel at translating business goals into
+                            technical solutions.
+                        </p>
 
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Email address"
-          />
+                        <p>
+                            My experience spans from building Cash Management
+                            Systems used by 5,000+ users to creating Vehicle
+                            Management Systems supporting 3,000+ fleet assets. I
+                            focus on delivering measurable improvements in
+                            efficiency, reliability, and user experience while
+                            maintaining 99.9% uptime in production environments.
+                        </p>
 
-          <input
-            type="tel"
-            name="phone"
-            id="phone"
-            placeholder="Phone number"
-          />
+                        <p>
+                            I'm passionate about clean architecture, scalable
+                            design patterns, and leading cross-functional teams
+                            from concept to deployment. Whether it's reducing
+                            transaction processing time by 40% or improving
+                            system accuracy by 98%, I deliver solutions that
+                            drive real business impact.
+                        </p>
+                    </div>
 
-          <textarea
-            name="message"
-            id="message"
-            placeholder="Message"
-            cols="30"
-            rows="10"
-          ></textarea>
+                    <div class="about-highlights">
+                        <div class="highlight-card">
+                            <h3>Enterprise Scale</h3>
+                            <p>
+                                Built systems serving 5,000+ users with 99.9%
+                                uptime
+                            </p>
+                        </div>
+                        <div class="highlight-card">
+                            <h3>Performance Focus</h3>
+                            <p>
+                                Improved transaction accuracy by 98% and reduced
+                                processing time by 40%
+                            </p>
+                        </div>
+                        <div class="highlight-card">
+                            <h3>Team Leadership</h3>
+                            <p>
+                                Managed full SDLC coordinating teams of 5-10
+                                developers
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- About section end -->
 
-          <button class="form-button" type="submit">Send Message</button>
-        </form>
-      </section>
-      <!-- Contact section end -->
-    </main>
-    <!-- Main section end -->
+            <!-- Experience section start -->
+            <section id="experience" class="experience">
+                <div class="section-header">
+                    <h2>Professional Experience</h2>
+                    <p class="section-subtitle">
+                        Building enterprise systems and leading development
+                        teams
+                    </p>
+                </div>
 
-    <!-- Footer start -->
-    <footer class="footer">
-      <p><small>Designed & built with ❤️ using HTML, CSS & JS.</small></p>
-      <p>
-        <small>&copy; <span class="year"></span> Ibrahim Suleiman</small>
-      </p>
-    </footer>
-    <!-- Footer end -->
+                <div class="experience-timeline">
+                    <div class="experience-item">
+                        <div class="experience-date">July 2024 – July 2025</div>
+                        <div class="experience-content">
+                            <h3>Software Engineer (Contract)</h3>
+                            <h4>Pillarsalt Solutions</h4>
+                            <ul>
+                                <li>
+                                    Spearheaded end-to-end development of Cash
+                                    Management System used by
+                                    <strong>5,000+ users</strong>, improving
+                                    transaction accuracy by
+                                    <strong>98%</strong> and reducing
+                                    reconciliation time by <strong>40%</strong>
+                                </li>
+                                <li>
+                                    Designed Vehicle Management System
+                                    supporting
+                                    <strong>3,000+ fleet assets</strong>,
+                                    streamlining maintenance scheduling and
+                                    reducing downtime by <strong>30%</strong>
+                                </li>
+                                <li>
+                                    Managed full SDLC for multiple enterprise
+                                    apps, coordinating teams of
+                                    <strong>5–10 developers</strong> and
+                                    achieving
+                                    <strong>99.9% uptime</strong> post-launch
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
 
-    <script src="script.js"></script>
-  </body>
+                    <div class="experience-item">
+                        <div class="experience-date">Jan 2024 – Jun 2024</div>
+                        <div class="experience-content">
+                            <h3>Software Engineer (Contract)</h3>
+                            <h4>Trez Tech</h4>
+                            <ul>
+                                <li>
+                                    Implemented robust authentication system
+                                    with Microsoft Identity & role-based access
+                                    control, improving security and user
+                                    management by <strong>40%</strong>
+                                </li>
+                                <li>
+                                    Built efficient product management features
+                                    (pagination, filtering), increasing data
+                                    retrieval speed by <strong>25%</strong>
+                                </li>
+                                <li>
+                                    Created comprehensive API documentation with
+                                    Swagger, reducing onboarding time for new
+                                    developers
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="experience-date">Oct 2022 – Dec 2023</div>
+                        <div class="experience-content">
+                            <h3>Software Developer (Full-Time)</h3>
+                            <h4>AcrossMart Ltd</h4>
+                            <ul>
+                                <li>
+                                    Oversaw technical development of e-commerce
+                                    platform using WordPress, WooCommerce,
+                                    Elementor, and custom solutions
+                                </li>
+                                <li>
+                                    Reduced page load time by
+                                    <strong>76%</strong> through code
+                                    optimization and image compression
+                                </li>
+                                <li>
+                                    Collaborated with cross-functional teams
+                                    ensuring seamless integration of front-end
+                                    and back-end systems
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="experience-date">Mar 2022 – Oct 2022</div>
+                        <div class="experience-content">
+                            <h3>Software Developer (Full-Time)</h3>
+                            <h4>Zenith Computer Institute</h4>
+                            <ul>
+                                <li>
+                                    Contributed to development of digital
+                                    learning platform serving
+                                    <strong>130+ students</strong>
+                                </li>
+                                <li>
+                                    Built responsive, user-friendly interfaces
+                                    with HTML5, CSS3, Tailwind CSS, ES6+
+                                    JavaScript
+                                </li>
+                                <li>
+                                    Streamlined internal dev processes,
+                                    achieving cost savings of approximately
+                                    <strong>₦600,000</strong>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Experience section end -->
+
+            <!-- Projects section start -->
+            <section id="projects" class="projects">
+                <div class="section-header">
+                    <h2>Featured Projects</h2>
+                    <p class="section-subtitle">
+                        Enterprise-grade solutions with measurable business
+                        impact
+                    </p>
+                </div>
+
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img
+                                src="https://placehold.co/400x250/02182b/edf7f6?text=EbeeGadgets"
+                                alt="EbeeGadgets - Inventory Management System"
+                            />
+                        </div>
+                        <div class="project-content">
+                            <h3>EbeeGadgets</h3>
+                            <p class="project-type">
+                                Device-Level Inventory Management System
+                            </p>
+                            <p>
+                                Specialized system for serialized electronics
+                                tracking devices by IMEI, serial, or MAC.
+                                Features advanced real-time authorization for
+                                granular permission control and audit-ready
+                                logging.
+                            </p>
+                            <div class="project-impact">
+                                <span class="impact-item"
+                                    >70% reduction in record-keeping
+                                    errors</span
+                                >
+                                <span class="impact-item"
+                                    >Full audit compliance</span
+                                >
+                            </div>
+                            <div class="tech-stack">
+                                <span>.NET 8</span>
+                                <span>EF Core</span>
+                                <span>SQL Server</span>
+                                <span>MVC</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img
+                                src="https://placehold.co/400x250/02182b/edf7f6?text=POS+Terminal"
+                                alt="POS Terminal Management System"
+                            />
+                        </div>
+                        <div class="project-content">
+                            <h3>POS Terminal Management System</h3>
+                            <p class="project-type">
+                                Enterprise-grade POS Management
+                            </p>
+                            <p>
+                                Comprehensive solution featuring wallet
+                                management, dispute resolution, audit logging,
+                                and fraud detection capabilities.
+                            </p>
+                            <div class="project-impact">
+                                <span class="impact-item">10,000+ users</span>
+                                <span class="impact-item"
+                                    >98% accuracy improvement</span
+                                >
+                                <span class="impact-item"
+                                    >40% faster reconciliation</span
+                                >
+                            </div>
+                            <div class="tech-stack">
+                                <span>.NET 8</span>
+                                <span>EF Core</span>
+                                <span>SQL Server</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img
+                                src="https://placehold.co/400x250/02182b/edf7f6?text=GSMBazaar"
+                                alt="GSMBazaar Marketplace"
+                            />
+                        </div>
+                        <div class="project-content">
+                            <h3>GSMBazaar</h3>
+                            <p class="project-type">
+                                Mobile Device Marketplace
+                            </p>
+                            <p>
+                                Jiji-like marketplace exclusively for mobile
+                                devices with vendor & admin dashboards, caching
+                                optimization, and anti-spam reporting systems.
+                            </p>
+                            <div class="project-impact">
+                                <span class="impact-item"
+                                    >40% reduction in spam</span
+                                >
+                                <span class="impact-item"
+                                    >60% faster page loads</span
+                                >
+                            </div>
+                            <div class="tech-stack">
+                                <span>ASP.NET Core MVC</span>
+                                <span>EF Core</span>
+                                <span>Redis</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img
+                                src="https://placehold.co/400x250/02182b/edf7f6?text=Snackify"
+                                alt="Snackify Platform"
+                            />
+                        </div>
+                        <div class="project-content">
+                            <h3>Snackify</h3>
+                            <p class="project-type">
+                                Mobile-First Ordering Platform
+                            </p>
+                            <p>
+                                Snack-ordering platform connecting vendors with
+                                customers, featuring real-time
+                                vendor-to-customer notifications and
+                                mobile-optimized interface.
+                            </p>
+                            <div class="project-impact">
+                                <span class="impact-item">100+ vendors</span>
+                                <span class="impact-item"
+                                    >3,000+ active customers</span
+                                >
+                            </div>
+                            <div class="tech-stack">
+                                <span>.NET 8 Web API</span>
+                                <span>PostgreSQL</span>
+                                <span>React Native</span>
+                                <span>FCM</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img
+                                src="https://placehold.co/400x250/02182b/edf7f6?text=College+Portal"
+                                alt="College Portal System"
+                            />
+                        </div>
+                        <div class="project-content">
+                            <h3>Kano State College Portal</h3>
+                            <p class="project-type">
+                                Academic Management System
+                            </p>
+                            <p>
+                                Full-stack academic portal for online
+                                registration and admin workflows with role-based
+                                access, session management, and dynamic
+                                registration.
+                            </p>
+                            <div class="project-impact">
+                                <span class="impact-item"
+                                    >30,000+ applicants yearly</span
+                                >
+                                <span class="impact-item"
+                                    >50% faster processing</span
+                                >
+                            </div>
+                            <div class="tech-stack">
+                                <span>ASP.NET Core MVC</span>
+                                <span>SQL Server</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img
+                                src="https://placehold.co/400x250/02182b/edf7f6?text=CodeStash"
+                                alt="CodeStash Platform"
+                            />
+                        </div>
+                        <div class="project-content">
+                            <h3>CodeStash</h3>
+                            <p class="project-type">
+                                Code Snippet Management Platform
+                            </p>
+                            <p>
+                                Secure platform for managing and sharing code
+                                snippets with syntax highlighting for 40+
+                                languages, OAuth integration, and advanced
+                                caching.
+                            </p>
+                            <div class="project-impact">
+                                <span class="impact-item"
+                                    >65% faster retrieval</span
+                                >
+                                <span class="impact-item"
+                                    >40+ languages supported</span
+                                >
+                            </div>
+                            <div class="tech-stack">
+                                <span>ASP.NET Core MVC</span>
+                                <span>SQL Server</span>
+                                <span>Identity</span>
+                                <span>OAuth</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Projects section end -->
+
+            <!-- Skills section start -->
+            <section id="skills" class="skills">
+                <div class="section-header">
+                    <h2>Technical Skills</h2>
+                    <p class="section-subtitle">
+                        Expertise in modern backend technologies and enterprise
+                        development
+                    </p>
+                </div>
+
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Languages</h3>
+                        <div class="skill-items">
+                            <span class="skill-item primary">C# (.NET)</span>
+                            <span class="skill-item">JavaScript</span>
+                            <span class="skill-item">TypeScript</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Frameworks & Tools</h3>
+                        <div class="skill-items">
+                            <span class="skill-item primary">ASP.NET Core</span>
+                            <span class="skill-item primary">.NET Web API</span>
+                            <span class="skill-item">Blazor</span>
+                            <span class="skill-item">MVC</span>
+                            <span class="skill-item primary">EF Core</span>
+                            <span class="skill-item">Dapper</span>
+                            <span class="skill-item">RabbitMQ</span>
+                            <span class="skill-item">Docker</span>
+                            <span class="skill-item">Swagger</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Databases</h3>
+                        <div class="skill-items">
+                            <span class="skill-item primary"
+                                >MS SQL Server</span
+                            >
+                            <span class="skill-item">PostgreSQL</span>
+                            <span class="skill-item">MySQL</span>
+                            <span class="skill-item">SQLite</span>
+                            <span class="skill-item">MongoDB</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Web Technologies</h3>
+                        <div class="skill-items">
+                            <span class="skill-item">HTML</span>
+                            <span class="skill-item">CSS</span>
+                            <span class="skill-item">Tailwind CSS</span>
+                            <span class="skill-item">Bootstrap</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>DevOps & Tools</h3>
+                        <div class="skill-items">
+                            <span class="skill-item">Git</span>
+                            <span class="skill-item">GitHub</span>
+                            <span class="skill-item">BitBucket</span>
+                            <span class="skill-item">CI/CD</span>
+                            <span class="skill-item">Redis</span>
+                            <span class="skill-item">Identity/OAuth</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Methodologies</h3>
+                        <div class="skill-items">
+                            <span class="skill-item">Agile</span>
+                            <span class="skill-item">SDLC</span>
+                            <span class="skill-item">Clean Architecture</span>
+                            <span class="skill-item">API Design</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Skills section end -->
+
+            <!-- Contact section start -->
+            <section id="contact" class="contact">
+                <div class="section-header">
+                    <h2>Let's Build Something Great</h2>
+                    <p class="section-subtitle">
+                        Ready to discuss your next project or opportunity?
+                    </p>
+                </div>
+
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 512 512"
+                                >
+                                    <path
+                                        d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"
+                                    />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3>Email</h3>
+                                <a href="mailto:ebeeraheem@gmail.com"
+                                    >ebeeraheem@gmail.com</a
+                                >
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 448 512"
+                                >
+                                    <path
+                                        d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+                                    />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3>LinkedIn</h3>
+                                <a
+                                    href="https://www.linkedin.com/in/ebeesule/"
+                                    target="_blank"
+                                    >linkedin.com/in/ebeesule/</a
+                                >
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 496 512"
+                                >
+                                    <path
+                                        d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                                    />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3>GitHub</h3>
+                                <a
+                                    href="https://github.com/ebeeraheem/"
+                                    target="_blank"
+                                    >github.com/ebeeraheem</a
+                                >
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 512 512"
+                                >
+                                    <path
+                                        d="M352 256c0 22.2-1.2 43.6-3.3 64H163.3c-2.2-20.4-3.3-41.8-3.3-64s1.2-43.6 3.3-64H348.7c2.2 20.4 3.3 41.8 3.3 64zm28.8-64H503.9c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64H380.8c2.1-20.6 3.2-42 3.2-64s-1.1-43.4-3.2-64zm112.6-32H376.7c-10-63.9-29.8-117.4-55.3-151.6c78.3 20.7 142 77.5 171.9 151.6zm-149.1 0H167.7c6.1-36.4 15.5-68.6 27-94.7c10.5-23.6 22.2-40.7 33.5-51.5C239.4 3.2 248.7 0 256 0s16.6 3.2 27.8 13.8c11.3 10.8 23 27.9 33.5 51.5c11.6 26 20.9 58.2 27 94.7zm-209 0H18.6C48.6 85.9 112.2 29.1 190.6 8.4C165.1 42.6 145.3 96.1 135.3 160zM8.1 192H131.2c-2.1 20.6-3.2 42-3.2 64s1.1 43.4 3.2 64H8.1C2.8 299.5 0 278.1 0 256s2.8-43.5 8.1-64zM194.7 446.6c-11.6-26-20.9-58.2-27-94.6H344.3c-6.1 36.4-15.5 68.6-27 94.6c-10.5 23.6-22.2 40.7-33.5 51.5C272.6 508.8 263.3 512 256 512s-16.6-3.2-27.8-13.8c-11.3-10.8-23-27.9-33.5-51.5zM135.3 352c10 63.9 29.8 117.4 55.3 151.6C112.2 482.9 48.6 426.1 18.6 352H135.3zm240.4 0H503.4c-30 74.1-93.6 130.9-171.9 151.6c25.5-34.2 45.2-87.7 55.3-151.6z"
+                                    />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3>Website</h3>
+                                <a
+                                    href="https://ebeesule.netlify.app"
+                                    target="_blank"
+                                    >ebeesule.netlify.app</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+
+                    <form
+                        class="contact-form"
+                        action=""
+                        method="POST"
+                        netlify
+                        name="Contact Form"
+                    >
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                required
+                            />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="company">Company (Optional)</label>
+                            <input type="text" id="company" name="company" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="6"
+                                required
+                                placeholder="Tell me about your project or opportunity..."
+                            ></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-primary">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </section>
+            <!-- Contact section end -->
+        </main>
+        <!-- Main section end -->
+
+        <!-- Footer section start -->
+        <footer class="footer">
+            <div class="footer-content">
+                <p>
+                    &copy; <span class="year">2025</span> Ibrahim Suleiman.
+                    Building scalable solutions with .NET
+                </p>
+                <div class="footer-links">
+                    <a href="https://github.com/ebeeraheem/" target="_blank"
+                        >GitHub</a
+                    >
+                    <a
+                        href="https://www.linkedin.com/in/ebeesule/"
+                        target="_blank"
+                        >LinkedIn</a
+                    >
+                    <a href="mailto:ebeeraheem@gmail.com">Email</a>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer section end -->
+
+        <script src="script.js"></script>
+    </body>
 </html>
