@@ -3,30 +3,32 @@ const showMenu = document.querySelector("#open-menu");
 const hideMenu = document.querySelector("#close-menu");
 const menu = document.querySelector(".header-nav");
 const menuLinks = document.querySelectorAll(".header-nav a");
+const overlay = document.querySelector(".nav-overlay");
 
 function openMenu() {
-    menu.classList.add("open");
-    document.body.style.overflow = "hidden";
+  menu.classList.add("open");
+  overlay.classList.add("active");
+  document.body.style.overflow = "hidden";
 }
 
 function closeMenu() {
-    menu.classList.remove("open");
-    document.body.style.overflow = "";
+  menu.classList.remove("open");
+  overlay.classList.remove("active");
+  document.body.style.overflow = "";
 }
 
 showMenu?.addEventListener("click", openMenu);
 hideMenu?.addEventListener("click", closeMenu);
+overlay?.addEventListener("click", closeMenu);
 menuLinks.forEach((link) => link.addEventListener("click", closeMenu));
 
 // Close menu on escape key
 document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape" && menu.classList.contains("open")) {
-        closeMenu();
-    }
+  if (e.key === "Escape" && menu.classList.contains("open")) {
+    closeMenu();
+  }
 });
-// End of Show / Hide navigation menu
-
-// Intersection Observer for scroll animations
+// End of Show / Hide navigation menu// Intersection Observer for scroll animations
 document.addEventListener("DOMContentLoaded", function () {
     // Elements to animate on scroll
     const animatedElements = document.querySelectorAll(
