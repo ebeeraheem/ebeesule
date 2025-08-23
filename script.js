@@ -37,17 +37,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const observer = new IntersectionObserver(
         (entries) => {
-            entries.forEach((entry) => {
+            entries.forEach((entry, index) => {
                 if (entry.isIntersecting) {
-                    entry.target.classList.add("visible");
+                    // Add a small staggered delay for better visual effect
+                    setTimeout(() => {
+                        entry.target.classList.add("visible");
+                    }, index * 100);
                     // Unobserve after animation to improve performance
                     observer.unobserve(entry.target);
                 }
             });
         },
         {
-            threshold: 0.1,
-            rootMargin: "0px 0px -50px 0px",
+            threshold: 0.2,
+            rootMargin: "0px 0px -80px 0px",
         }
     );
 

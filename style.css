@@ -686,8 +686,6 @@ section {
     border-radius: 1rem;
     overflow: hidden;
     transition: var(--transition-normal);
-    opacity: 0;
-    transform: translateY(50px);
 }
 
 .project-card.featured {
@@ -698,6 +696,10 @@ section {
     transform: translateY(-8px);
     border-color: var(--accent-primary);
     box-shadow: var(--shadow-xl);
+}
+
+.project-card.visible:hover {
+    transform: translateY(-8px);
 }
 
 .project-image {
@@ -1063,19 +1065,15 @@ section {
     }
 }
 
-.project-card {
-    animation: fadeInUp var(--transition-slow) ease forwards;
-}
-
 /* Scroll animations */
 .project-card,
 .experience-item,
 .skill-category,
 .highlight-card {
     opacity: 0;
-    transform: translateY(50px);
-    transition: opacity var(--transition-slow) ease,
-        transform var(--transition-slow) ease;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease,
+        transform 0.6s ease;
 }
 
 .project-card.visible,
